@@ -7,8 +7,7 @@ if(isset($_SESSION['user'])!="")
 	header("Location: homepage.html");
 }
 
-// if(isset($_POST['btn-login']))
-// {
+
 	
 	$username=$_POST['username'];
 	$pwd=$_POST['pwd'];
@@ -27,7 +26,7 @@ if(isset($_SESSION['user'])!="")
 	
 		
 	}
-//}
+
 
 
 mysqli_close($conn);
