@@ -30,17 +30,37 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                                         
-							<li class="dropdown-submenu">
-                            <a tabindex="-1" href="#">Sign out</a>
+										  <li class="dropdown" id = "new">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"> Sign in&nbsp;</span><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                          <li><a href="signup.html">Register</a></li>
+                          
+                          <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">Sign in</a>
                             <ul class="dropdown-menu">
-                             <li><a tabindex="-1" href="Adminpage.html">Sign out</a></li>
-                      
-							</li>
-                            </ul>  
+                              <li><a tabindex="-1" href="Adminpage.html">Admin Sign in</a></li>
+                              <li><a href="customersignin.html">Customer Sign in</a></li>
+							  </li>
+                            </ul>
+                          </li>
+                        
+                        </ul>
+                    </li>
+							<li class="dropdown" id = "old">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" ><span id="wuser">Welcome!</span>
+                        <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+
+                            <li><a href="homepage.html" id="logout">Sign out</a></li>
+                            </ul>
+                        </li>
                 </ul>
             </div>
         </div>
     </nav>
+	
 <div class="jumbotron text-center">
         <h1>Airlines</h1> 
         <p></p> 
@@ -362,6 +382,12 @@ mysqli_close($con);
     
   </div>
 </div>
+<footer class="container-fluid text-center">
+		<a href="#" title="To Top">
+			<span class="glyphicon glyphicon-arrow-up"></span>
+		</a>
+		<p>Airlines</p>		
+	</footer>
 
 
 

@@ -41,14 +41,24 @@
                             <ul class="dropdown-menu">
                               <li><a tabindex="-1" href="Adminpage.html">Admin Sign in</a></li>
                               <li><a href="customersignin.html">Customer Sign in</a></li>
-                              
-                        
-							</li>
+							  </li>
                             </ul>
                           </li>
                         
                         </ul>
                     </li>
+							  
+						<li class="dropdown" id = "old">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" ><span id="wuser">Welcome!</span>
+                        <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+
+                            <li><a href="homepage.html" id="logout">Sign out</a></li>
+                            </ul>
+                        </li>
+                        
+							
                     
                 </ul>
             </div>
@@ -179,8 +189,8 @@ mysqli_close($con);
 </div>
 
 <footer class="container-fluid text-center">
-        <a href="#signUpPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
+        <a href="#" title="To Top">
+            <span class="glyphicon glyphicon-arrow-up"></span>
         </a>
         <p>Airlines</p>     
 </footer>
